@@ -1,0 +1,12 @@
+version: '3.9'
+
+
+services:
+  db:
+    image: postgres:14.3-alpine3.15
+    ports:
+      - '5434:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: net_flask_4
